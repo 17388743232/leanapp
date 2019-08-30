@@ -28,7 +28,7 @@ app.use(AV.koa());
 
 app.use(bodyParser());
 
-router.get('/', async function(ctx) {
+router.get('*', async function(ctx) {
   ctx.state.currentTime = new Date();
   await ctx.render('./index.ejs');
 });
