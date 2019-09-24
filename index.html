@@ -6,12 +6,13 @@
 </head>
 <body>
 	<h1 class="fat">我是小胖子</h1>
-  <span>点击我变绿色</span>
+  <span style="text-decorator:underline">点击我变绿色</span>
   <script>
      var span = document.querySelector('span');
      span.onclick = function(ev){
       ev.target.innerText = '我绿了';
       document.querySelector('.fat').style.color = 'green';
+      document.querySelector('.fat').style.fontSize = '35px';
      }
   </script>
 </body>
